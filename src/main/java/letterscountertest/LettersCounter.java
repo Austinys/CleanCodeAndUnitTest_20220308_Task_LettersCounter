@@ -1,3 +1,5 @@
+package letterscountertest;
+
 public class LettersCounter {
     private char character;
     private String text;
@@ -7,7 +9,7 @@ public class LettersCounter {
         this.text = text;
     }
 
-    public int countLetters() {
+    public static int countLetters(char character, String text) {
 
         int count = 0;
         for (int i = 0; i < text.length(); i++) {
@@ -16,6 +18,8 @@ public class LettersCounter {
             }
         }
         System.out.println("Character " + character + " appears " + count + " times.");
+
+        return count;
     }
 }
 

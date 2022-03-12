@@ -1,5 +1,6 @@
 package com.swedbank.itacademy.unittests;
 
+import letterscountertest.LettersCounter;
 import org.junit.jupiter.api.*;
 
 public class LettersCounterTest {
@@ -10,7 +11,6 @@ public class LettersCounterTest {
 
     @BeforeEach
     public void initInitialValues() {
-
     }
 
     @AfterAll
@@ -22,10 +22,9 @@ public class LettersCounterTest {
     public void testLettersCounter() {
         char character = 'b';
         String text = "dcjsdsdcsncbbasfksdfb";
+
         int actual = LettersCounter.countLetters(character, text);
 
         Assertions.assertEquals(3, actual);
-
-
     }
 }
